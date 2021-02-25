@@ -1,0 +1,10 @@
+---
+application: gps-demo
+modules:
+  - name: ads-node-module
+    image: ci4rail/ads-node-module:latest
+    createOptions: '{}'
+    imagePullPolicy: on-create
+    restartPolicy: always
+    status: running
+    startupOrder: 1
