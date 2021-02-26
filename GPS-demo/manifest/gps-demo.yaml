@@ -2,14 +2,14 @@
 application: gps-demo
 modules:
   - name: ads-node-module
-    image: ci4rail/ads-node-module:0.1.0-4.Branch.feature-nats.Sha.66f1cfab9cee3db5442ce2e80ab3d02bb2fa1ff2
+    image: ci4rail/ads-node-module:0.1.0-4.Branch.feature-nats.Sha.aff937ad23e4329ed7f7a05934158c483fb29e63
     createOptions: '{}'
     imagePullPolicy: on-create
     restartPolicy: always
     status: running
     startupOrder: 1
   - name: service-location
-    image: ci4rail/alm-location-module:0.1.0-2.Branch.feature-nats.Sha.6b7d1f1e63996882ab1a6dd6432c30ff98bb4aa9
+    image: ci4rail/alm-location-module:0.1.0-6.Branch.feature-nats.Sha.450e1b63ae2dbd2095c7c980f00c96f4ad8fd00d
     createOptions: '{}'
     imagePullPolicy: on-create
     restartPolicy: always
