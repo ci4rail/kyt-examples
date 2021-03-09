@@ -9,7 +9,7 @@ modules:
     status: running
     startupOrder: 1
   - name: service-location
-    image: ci4rail/alm-location-module:0.1.0-6.Branch.feature-nats.Sha.450e1b63ae2dbd2095c7c980f00c96f4ad8fd00d
+    image: ci4rail/alm-location-module:0.1.0-10.Branch.main.Sha.cb0e8494702a4df357413e4fec0b5becb8e1352c
     createOptions: '{}'
     imagePullPolicy: on-create
     restartPolicy: always
