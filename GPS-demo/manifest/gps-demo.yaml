@@ -16,7 +16,7 @@ modules:
     status: running
     startupOrder: 1
     envs:
-      GPSD_HOST: gps-demo-gpsfake:2947
+      GPSD_HOST: gps-demo_gpsfake:2947
   - name: gpsfake
     image: ci4rail/gpsfake-module:master
     createOptions: '{}'
