@@ -9,9 +9,19 @@ modules:
     status: running
     startupOrder: 1
   - name: service-location
-    image: ci4rail/alm-location-module:0.1.0-15.Branch.bugfix-nats-timeout.Sha.693f85d58c527e1b28b1d221421d86a3aedff795
+    image: harbor.ci4rail.com/ci4rail/alm-location-module:0.1.0-26.Branch.gpsd-test.Sha.d06cd933dee4cdd0ae5ec709c9a650d2a24a1c64
     createOptions: '{}'
     imagePullPolicy: on-create
     restartPolicy: always
     status: running
     startupOrder: 1
+    envs:
+      GPSD_HOST: gps-demo-gpsfake:2947
+  - name: gpsfake
+    image: ci4rail/gpsfake-module:master
+    createOptions: '{}'
+    imagePullPolicy: on-create
+    restartPolicy: always
+    status: running
+    startupOrder: 1
+  
