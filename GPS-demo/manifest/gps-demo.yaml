@@ -15,8 +15,9 @@ modules:
     restartPolicy: always
     status: running
     startupOrder: 1
-    envs:
-      GPSD_HOST: gps-demo_gpsfake:2947
+    # enable this for faked gps data
+    #envs:
+    #  GPSD_HOST: gps-demo_gpsfake:2947
   - name: gpsfake
     image: harbor.ci4rail.com/ci4rail/gpsfake-module:0.1.0-6.Branch.main.Sha.3c0be1adbb35c823f08e33d45491c76e15320bbe
     createOptions: '{}'
