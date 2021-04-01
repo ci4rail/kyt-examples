@@ -9,7 +9,7 @@ modules:
     status: running
     startupOrder: 1
   - name: service-location
-    image: harbor.ci4rail.com/ci4rail/alm-location-module:0.1.0-26.Branch.gpsd-test.Sha.d06cd933dee4cdd0ae5ec709c9a650d2a24a1c64
+    image: harbor.ci4rail.com/ci4rail-dev/alm-location-module:d2f23ba 
     createOptions: '{}'
     imagePullPolicy: on-create
     restartPolicy: always
@@ -19,7 +19,7 @@ modules:
   #   envs:
   #     GPSD_HOST: gps-demo_gpsfake:2947
   # - name: gpsfake
-  #   image: harbor.ci4rail.com/ci4rail/gpsfake-module:0.1.0-24.Branch.gpsd.Sha.fcf1ee031c0cc77896da78133501fbf6bfc8f12a
+  #   image: harbor.ci4rail.com/ci4rail-dev/gpsfake-module:d2f23ba 
   #   createOptions: '{}'
   #   imagePullPolicy: on-create
   #   restartPolicy: always
